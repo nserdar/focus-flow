@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: focusflow-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5434/focusflow_db
+    username: focusflow
+    password: focusflow
+    driver-class-name: org.postgresql.Driver
+
+  profiles:
+    active: dev
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+    show-sql: true
+
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+app:
+  jwt:
+    secret: "CHANGE-ME-TO-LONG-SECRET-KEY-256BIT"
+    expiration: 3600000        # 1 hour
+    refresh-expiration: 604800000  # 7 days
+---
+spring:
+  config:
+    activate:
+      on-profile: docker
