@@ -100,5 +100,18 @@ The app connects to the Focus Flow API running on port 8081 by default. Make sur
 
 ## License
 
-MIT
+Copyright (c) 2024 nserdar. All Rights Reserved.
 
+This project is **proprietary and confidential**. No part of this software,
+documentation, or associated materials may be used, copied, modified,
+distributed, or disclosed without prior written authorization from the Owner.
+See the [LICENSE](../LICENSE) file at the repository root for full terms.
+
+## Usage Restrictions
+
+Unauthorized use, reproduction, or distribution of any part of this project is
+strictly prohibited. This includes sharing source code, configuration, UI
+assets, or any other project materials externally (e.g., on public forums,
+social media, blog posts, or in portfolios) without explicit written permission
+from the Owner. If you have questions about permitted use, contact the Owner via
+[GitHub](https://github.com/nserdar).
